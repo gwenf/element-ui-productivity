@@ -1,4 +1,6 @@
-# element-ui-shop
+# Element UI Task Tracking
+
+This is a demo application built with Vue.js and Element UI.
 
 ## Project setup
 ```
