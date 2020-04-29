@@ -11,7 +11,9 @@
     @node-drop="handleDrop"
     draggable
     :allow-drop="allowDrop"
-    :allow-drag="allowDrag">
+    :allow-drag="allowDrag"
+    show-checkbox
+  >
   </el-tree>
 </template>
 

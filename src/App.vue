@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <TopNav />
-    <router-view />
+    <el-main>
+      <router-view />
+    </el-main>
   </div>
 </template>
 
@@ -15,3 +17,9 @@ export default {
   }
 }
 </script>
+
+<style>
+#app {
+  font-family: 'Open Sans', sans-serif;
+}
+</style>
