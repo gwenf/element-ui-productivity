@@ -30,7 +30,7 @@
 export default {
   data() {
     return {
-      cards: [...Array(1).keys()],
+      cards: [...Array(100).keys()],
       inputs: [],
       textareas: []
     }
