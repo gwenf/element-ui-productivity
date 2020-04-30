@@ -11,11 +11,20 @@
     <el-menu-item :route="{ name: 'calendar' }" index="3">Calendar</el-menu-item>
     <el-menu-item :route="{ name: 'table' }" index="4">Table</el-menu-item>
     <el-menu-item :route="{ name: 'form' }" index="5">Form</el-menu-item>
+
+    <el-menu-item index="6">
+      <el-button @click="openDrawer" type="primary" style="margin-left: 16px;">
+        menu
+      </el-button>
+    </el-menu-item>
   </el-menu>
 </template>
 
 <script>
 export default {
+  props: {
+    openDrawer: Boolean
+  },
   data () {
     return {
       activeIndex: '1'

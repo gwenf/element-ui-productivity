@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-    <TopNav />
+    <TopNav :openDrawer="openDrawer" />
     <el-main>
       <router-view />
     </el-main>
+    <el-drawer
+      :visible.sync="drawer"
+      :with-header="false">
+      <span>Hi there!</span>
+    </el-drawer>
   </div>
 </template>
 
@@ -14,6 +19,16 @@ export default {
   name: 'app',
   components: {
     TopNav
+  },
+  data() {
+    return {
+      drawer: false
+    }
+  },
+  methods: {
+    openDrawer() {
+      this.drawer = true
+    }
   }
 }
 </script>
